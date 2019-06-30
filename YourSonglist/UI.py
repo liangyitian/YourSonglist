@@ -529,7 +529,7 @@ songPhoto = Label(w, image=defaultSongBg)
 songPhoto.place(x=1240, y=90)
 songListPhoto = Label(w,image=defaultSongListBg)
 songListPhoto.place(x=630, y=90)
-
+scaleProgress.set(0)
 #endregion
 
 
@@ -547,7 +547,7 @@ currentIndex=None
 pygame.mixer.init(frequency=44100)
 pygame.mixer.music.set_volume(0.5)
 
-scaleProgress.set(0)
+
 
 w.after(20,updateProgressBar)
 
